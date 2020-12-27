@@ -9,8 +9,30 @@
     .audio-player {
         box-shadow: none;
         background-color: transparent;
+        padding: unset;
+        max-width: 150px;
         .rhap_stacked .rhap_controls-section {
             margin-top: unset;
+
+            .audio-icon {
+                width: 25px;
+            }
+            .audio-icon > * {
+                stroke: #FFF;
+                width: 35px;
+            }
+            // .rhap_volume-container {
+            //     position: relative;
+
+            //     .rhap_volume-button {
+            //         color: #fff;
+            //     }
+            //     .rhap_volume-bar-area {
+            //         position: absolute;
+            //         transform: rotate(270deg);
+
+            //     }
+            // }
         }
     }
 

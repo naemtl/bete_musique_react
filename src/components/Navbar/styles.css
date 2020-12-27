@@ -15,10 +15,21 @@
   -webkit-box-shadow: none;
           box-shadow: none;
   background-color: transparent;
+  padding: unset;
+  max-width: 150px;
 }
 
 .navbar-container .audio-player .rhap_stacked .rhap_controls-section {
   margin-top: unset;
+}
+
+.navbar-container .audio-player .rhap_stacked .rhap_controls-section .audio-icon {
+  width: 25px;
+}
+
+.navbar-container .audio-player .rhap_stacked .rhap_controls-section .audio-icon > * {
+  stroke: #FFF;
+  width: 35px;
 }
 
 .navbar-container .icon-container img, .navbar-container .audio-controls img {

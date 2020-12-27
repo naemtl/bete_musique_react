@@ -1,11 +1,10 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import { GrPauseFill, GrPlayFill } from "react-icons/gr";
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
 
 import beteIcon from "../../assets/images/bete-white-bg.jpg";
-import playBtn from "../../assets/images/play-bsn.png";
-import pauseBtn from "../../assets/images/pause-bsn.png";
 import './styles.css'
 
 const Navbar = () => {
@@ -24,10 +23,10 @@ const Navbar = () => {
                 showFilledProgress={false}
                 customProgressBarSection={[]}
                 customControlsSection={['MAIN_CONTROLS', 'VOLUME_CONTROLS']}
-                // customIcons={{
-                //     play: playBtn,
-                //     pause: pauseBtn
-                // }}
+                customIcons={{
+                    play: <GrPlayFill className='audio-icon' />,
+                    pause: <GrPauseFill className='audio-icon' />
+                }}
             // other props here
             />
 

@@ -1,1 +1,32 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+.navbar-container {
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+}
+
+.navbar-container .audio-player {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+}
+
+.navbar-container .audio-player .rhap_stacked .rhap_controls-section {
+  margin-top: unset;
+}
+
+.navbar-container .icon-container img, .navbar-container .audio-controls img {
+  width: 35px;
+  cursor: pointer;
+}
+
+.navbar-container .navbar-item {
+  margin-right: 10px;
+}
+/*# sourceMappingURL=styles.css.map */

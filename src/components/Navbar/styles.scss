@@ -1,0 +1,27 @@
+.navbar-container {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+
+    .audio-player {
+        box-shadow: none;
+        background-color: transparent;
+        .rhap_stacked .rhap_controls-section {
+            margin-top: unset;
+        }
+    }
+
+    .icon-container, .audio-controls {
+        img {
+            width: 35px;
+            cursor: pointer;
+        }
+    }
+
+    .navbar-item {
+        margin-right: 10px;
+    }
+}

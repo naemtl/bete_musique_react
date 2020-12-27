@@ -1,10 +1,12 @@
 import React from 'react'
 import { BrowserRouter, Route } from "react-router-dom";
 
-import Archives from "./components/Archives";
-import Homepage from "./components/Homepage";
-import Navbar from "./components/Navbar";
-import Ticker from "./components/Ticker";
+import Archives from "../Archives";
+import Homepage from "../Homepage";
+import Navbar from "../Navbar";
+import Ticker from "../Ticker";
+
+import './styles.css'
 
 const App = () => {
   return (

@@ -1,13 +1,29 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from "react-router-dom";
-import { GrPauseFill, GrPlayFill } from "react-icons/gr";
+import Ticker, { NewsTicker } from 'nice-react-ticker';
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
+import { GrPauseFill, GrPlayFill } from "react-icons/gr";
+
+import getBeteInfo from "../../services/airtimepro.js";
 
 import beteIcon from "../../assets/images/bete-white-bg.jpg";
 import './styles.css'
 
 const Navbar = () => {
+
+    const [data, setData] = useState('')
+
+    useEffect(() => {
+        getBeteInfo(setData)
+
+        const interval = setInterval(() => {
+            getBeteInfo(setData)
+        }, 300000);
+
+        return () => clearInterval(interval)
+    }, [])
+
     return (
         <div className='navbar-container'>
             <div className='icon-container navbar-item'>
@@ -29,7 +45,9 @@ const Navbar = () => {
                 }}
             // other props here
             />
-
+            <Ticker isNewsTicker={true}>
+                <NewsTicker id="1" title={data ? data.current.name : ''} />
+            </Ticker>
         </div>
     )
 }

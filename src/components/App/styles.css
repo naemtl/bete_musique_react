@@ -1,4 +1,9 @@
 /* Box sizing rules */
+@font-face {
+  font-family: "Ocra";
+  src: url("../../assets/fonts/OcrA.otf");
+}
+
 *,
 *::before,
 *::after {
@@ -15,6 +20,7 @@ ol[class] {
 /* Remove default margin */
 body {
   margin: 0;
+  font-family: Ocra;
 }
 
 /* Set core body defaults */

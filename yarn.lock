@@ -7366,11 +7366,6 @@ next-tick@~1.0.0:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
-nice-react-ticker@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/nice-react-ticker/-/nice-react-ticker-1.1.0.tgz#eb9bb1c3b8c2122ff3b638b54765df6dd457ead0"
-  integrity sha512-qpN8DT1I6hekv2NmdOj8ei9nIoMQHl1WBEsyygHGHbEkiYCnM1LtMgtK/e6zsSjghS4BTWVLHG2YEwYKol4+ig==
-
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
@@ -8953,6 +8948,11 @@ react-app-polyfill@^2.0.0:
     raf "^3.4.1"
     regenerator-runtime "^0.13.7"
     whatwg-fetch "^3.4.1"
+
+react-css-marquee@^0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/react-css-marquee/-/react-css-marquee-0.0.10.tgz#b4f5ccf097af6a4ddbde86a5c5385cd2c41e3ed0"
+  integrity sha512-AH6Nd427F9zW+TFoJ3LHJd0QtdGaPWYOOqFawsTB7W0o6I/cq7h0jyvnCVPEpR27h2ogKAawyFzyG3bvi3g4EQ==
 
 react-dev-utils@^11.0.1:
   version "11.0.1"

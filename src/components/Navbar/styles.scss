@@ -3,47 +3,79 @@
     width: 100%;
     background-color: black;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 0 10px;
 
-    .audio-player {
+    .navbar-container-left {
+        display: flex;
+        align-items: center;
+        width: 180px;
+
+        .audio-player {
         box-shadow: none;
         background-color: transparent;
         padding: unset;
-        max-width: 110px;
-        .rhap_stacked .rhap_controls-section {
-            margin-top: unset;
+        max-width: 200px;
 
-            .audio-icon {
-                width: 25px;
+        .rhap_stacked { 
+            
+            .rhap_progress-section {
+                display: none;
             }
-            .audio-icon > * {
-                stroke: #FFF;
-                width: 35px;
+
+            .rhap_controls-section {
+                margin-top: unset;
+
+                .audio-icon {
+                    width: 25px;
+                }
+                .audio-icon > * {
+                    stroke: #FFF;
+                    width: 35px;
+                }
             }
-            // .rhap_volume-container {
-            //     position: relative;
+        }
+    }
+        margin-right: 20px;
 
-            //     .rhap_volume-button {
-            //         color: #fff;
-            //     }
-            //     .rhap_volume-bar-area {
-            //         position: absolute;
-            //         transform: rotate(270deg);
-
-            //     }
-            // }
+        .icon-container, .audio-controls {
+            img {
+                min-width: 35px;
+                max-width: 35px;
+                cursor: pointer;
+            }
         }
     }
 
-    .icon-container, .audio-controls {
-        img {
-            width: 35px;
+    .navbar-container-right {
+        display: flex;
+        div {
+            color: white;
+            padding: 5px;
+            margin-right: 10px;
             cursor: pointer;
+            font-size: 15px;
+            
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
+    
+    .navbar-ticker__wrapper {
+        font-size: 12px;
+        height: unset;
+    }
+}
 
-    .navbar-item {
+@media (max-width: 425px) {
+    .navbar-container .navbar-container-left {
+        width: unset;
         margin-right: 10px;
+    }
+
+    .rhap_volume-controls {
+        display: none;
     }
 }

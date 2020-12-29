@@ -5,39 +5,87 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 0 10px;
 }
 
-.navbar-container .audio-player {
+.navbar-container .navbar-container-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 180px;
+  margin-right: 20px;
+}
+
+.navbar-container .navbar-container-left .audio-player {
   -webkit-box-shadow: none;
           box-shadow: none;
   background-color: transparent;
   padding: unset;
-  max-width: 110px;
+  max-width: 200px;
 }
 
-.navbar-container .audio-player .rhap_stacked .rhap_controls-section {
+.navbar-container .navbar-container-left .audio-player .rhap_stacked .rhap_progress-section {
+  display: none;
+}
+
+.navbar-container .navbar-container-left .audio-player .rhap_stacked .rhap_controls-section {
   margin-top: unset;
 }
 
-.navbar-container .audio-player .rhap_stacked .rhap_controls-section .audio-icon {
+.navbar-container .navbar-container-left .audio-player .rhap_stacked .rhap_controls-section .audio-icon {
   width: 25px;
 }
 
-.navbar-container .audio-player .rhap_stacked .rhap_controls-section .audio-icon > * {
+.navbar-container .navbar-container-left .audio-player .rhap_stacked .rhap_controls-section .audio-icon > * {
   stroke: #FFF;
   width: 35px;
 }
 
-.navbar-container .icon-container img, .navbar-container .audio-controls img {
-  width: 35px;
+.navbar-container .navbar-container-left .icon-container img, .navbar-container .navbar-container-left .audio-controls img {
+  min-width: 35px;
+  max-width: 35px;
   cursor: pointer;
 }
 
-.navbar-container .navbar-item {
+.navbar-container .navbar-container-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar-container .navbar-container-right div {
+  color: white;
+  padding: 5px;
   margin-right: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.navbar-container .navbar-container-right div:hover {
+  text-decoration: underline;
+}
+
+.navbar-container .navbar-ticker__wrapper {
+  font-size: 12px;
+  height: unset;
+}
+
+@media (max-width: 425px) {
+  .navbar-container .navbar-container-left {
+    width: unset;
+    margin-right: 10px;
+  }
+  .rhap_volume-controls {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

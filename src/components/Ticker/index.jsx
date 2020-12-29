@@ -1,11 +1,19 @@
 import React from 'react'
+import Ticker from 'react-ticker'
 
-const Ticker = () => {
+const TickerUse = () => {
     return (
-        <div>
-            
-        </div>
+        // <Ticker>
+        //     {({ index }) => (
+        //         <>
+        //             <h1 style={{ paddingRight: "0.5em" }}>
+        //                 This is the Headline of element #{index}!
+        //             </h1>
+        //         </>
+        //     )}
+        // </Ticker>
+        <div></div>
     )
 }
 
-export default Ticker
+export default TickerUse
